@@ -1,0 +1,408 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.video-div{
+    width: 100%;
+    height: 100%;
+}
+.gym-video{
+    width: 100%;
+    height: 100%;
+}
+
+.hero{
+    position: relative;
+}
+
+.layover{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(40,50,62,0.5),rgba(40,50,62,0.5));
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px;
+   
+}
+.flex{
+    display: flex;
+}
+.flexc{
+    display: flex;
+    flex-direction: column;
+}
+.flex30{
+    width: 30%;
+}
+.flex48{
+    width: 48%;
+}
+.flex50{
+    width: 50%;
+}
+.flex24{
+    width: 24%;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items{
+    align-items: center;
+}
+.end-credits{
+    padding: 40px 0;
+    background: white;
+}
+.end-credits span{
+    font-size: 12px;
+}
+.map{
+    border: 1px solid rgb(221, 212, 221);
+}
+.map iframe{
+    width: 100%;
+}
+.contact-form{
+    background-image: url(/assets/contact-bg.jpg);
+    background-size: cover;
+    padding: 41px 0;
+}
+.form-details{
+    width: 100%;
+    background: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+fieldset{
+    width: 80%;
+}
+.name-email-class{
+    width: 100%;
+    background: white;
+}
+.form-ctrl{
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    padding: 8px 6px;
+    border: 1px solid rgb(167, 164, 164);
+    color: rgb(194, 191, 191);
+}
+.subject{
+    width: 100%;
+    padding: 20px 0;
+}
+.message{
+    width: 98%;
+}
+.button-class{
+    margin-top: 10px;
+    width: 22%;
+    padding: 10px 10px;
+    background: #EE553A;
+    color: white;
+    border: 0;
+}
+.button-class a{
+    text-decoration: none;
+    color: white;
+}
+.section-header{
+    width: 60%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.section-header h2{
+font-size: 25px;
+font-weight: 800;
+}
+.section-header img{
+    padding: 20px 0;
+}
+.section-header p{
+    text-align: center;
+    line-height: 1.5;
+    color: rgb(151, 150, 150);
+}
+.trainer-info{
+    width: 100%;
+}
+.trainer-information{
+    margin-bottom: 100px;
+}
+.trainer-info-card{
+    padding: 0 20px;
+    border-radius: 10px;
+}
+.trainer-info-card-container{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.trainer-info-card-container img{
+    width: 100%;
+    padding: 15px 0;
+}
+.trainer-info-card-container span{
+    padding: 12px 0;
+    font-size: 13px;
+    font-weight: 500;
+}
+.trainer-info-card-container cite{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.trainer-info-card-container p{
+    color: rgb(199, 195, 195);
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 10px 0;
+}
+
+.trainer-info-card{
+    background: white;
+    padding: 40px 0;
+    box-shadow: 3px 3px 10px rgb(184, 183, 183);
+}
+
+/* .handle-nav li i{
+    /* margin: 1px; */
+
+i{
+    margin: 6px;
+}
+
+.schedule{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.training-day{
+    width: 32%;
+}
+.training-card{
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 25px 20px;
+    background: white;
+    box-shadow: 2px 2px 10px rgb(228, 226, 226);
+}
+.training-card-schedule{
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 25px 20px;
+    background: #EE553A;
+    box-shadow: 2px 2px 10px rgb(228, 226, 226);
+    border-radius: 5px;
+}
+.training-card-schedule a{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.training-card a{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+}
+.training-card a span{
+    padding: 0 25px;
+    margin-left: 10px;
+}
+.first-train{
+    width: 62%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.first-train-img{
+    padding: 20px 0;
+    width: 90%;
+}
+.first-train-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.first-train-info{
+    width: 90%;
+}
+.first-train-info h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    padding: 20px 0;
+}
+.first-train-info p{
+    color: rgb(197, 195, 195);
+    line-height: 1.4;
+    padding: 20px 0;
+}
+.first-train-info a{
+    text-decoration: none;
+}
+.view-schedule{
+    margin-top: 10px;
+    display: block;
+    background:#EE553A ;
+    padding: 15px 20px;
+    width: 22%;
+    color: white;
+    border-radius: 5px;
+}
+
+.begin-today{
+    width: 100%;
+    margin: 0 auto;
+    background: url(/assets/cta-bg.jpg);
+    background-size: cover;
+    padding: 41px 0;
+}
+.today{
+    padding: 60px 0;
+}
+.today h2{
+font-size: 40px;
+color: white;
+font-weight: 800;
+}
+.today p{
+    color: rgb(160, 160, 160);
+    padding: 25px 0;
+    text-align: center;
+    line-height: 1.5;
+}
+.membership{
+    padding: 10px 20px;
+    background: #EE553A;
+    color: rgb(211, 209, 209);
+
+}
+header{
+   background: linear-gradient(rgba(102,109,114,0.3),rgba(102,109,114,0.3));
+}
+.membership span{
+    font-size: 14px;
+}
+
+.top-nav nav ul li{
+    margin: 10px;
+}
+.top-nav nav ul li a{
+    text-decoration: none;
+}
+.top-nav nav ul li a span{
+    color: white;
+}
+.top-nav .left span{
+    font-size: 35px;
+    font-weight: 900;
+}
+.s-up{
+    background: #EE553A;
+    padding: 10px 20px;
+}
+.cover-main{
+    margin-top: 230px;
+}
+.cover-main span{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.cover-main h2{
+    font-size: 60px;
+    font-weight: 800;
+}
+.membershit{
+    padding: 10px 20px;
+    background: tomato;
+    color: white;
+
+}
+.membershit span{
+font-size: 15px;
+font-weight: 300;
+}
+
+.table-sec{
+    background: url(/assets/schedule-bg.jpg);
+}
+.day-nav{
+    width: 100%;
+}
+.day-nav li a{
+text-decoration: none;
+color: white;
+margin: 10px;
+}
+
+.time-table{
+    margin-top: 100px;
+    border: 2px solid white;
+    margin-bottom: 100px;
+}
+.time-table tr{
+    border: 2px solid white;
+}
+.time-table tr td {
+    border: 2px solid white;
+    color: white;
+    padding: 40px 50px;
+}
